@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.guiaResta"
+             Title="Guia Resta">
+
+    <Grid>
+        <Image Source="fondoguias.jpg"
+               Aspect="AspectFill"/>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="Resta"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"
+                       />
+
+                <Label Text="Al igual que con la suma, es importante entender cómo restar para hacerlo correctamente. Vamos a aprender cómo restar, también llamado quita o sustraer."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Cuando tienes un grupo de cosas y tomas algunas o todas ellas, estás restando o quitando. Es lo opuesto a sumar, donde añades cosas."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Imagina que tienes 8 dulces y decides compartir 3 con un amigo. ¿Cuántos te quedan después de darle los dulces? Para resolver esto, usamos algo llamado resta. El signo que usamos para esto es el menos (-)."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="resta1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Podemos representar esto con la operación: 8 - 3, que significa ocho menos tres. En este ejemplo, representa los 8 dulces que tenías menos los 3 que compartiste."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Para visualizar lo que ocurre cuando restamos, dibujamos 8 dulces que tenías al principio, después dejamos sin color los dulces que sustrajimos o restamos. El resultado de la resta será el número de dulces que queden con color:"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,100" />
+
+
+
+                <Label Text="Restar usando valores posicionales"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Colocamos los números uno debajo del otro, como en la suma, para que sus lugares coincidan."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso1resta1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Empezamos restando las unidades. En este caso, 7 - 5. "
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Preguntamos: ¿Cuánto falta para que 5 llegue a 7? La respuesta es 2, así que escribimos eso en la casilla de las unidades."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso2resta1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 3:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Luego, pasamos a las decenas. En este caso, 9 - 3. Preguntamos: ¿Cuánto falta para que 3 llegue a 9? La respuesta es 6, así que escribimos eso en la casilla de las decenas."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Finalmente obtenemos: 97 - 35 = 62. Es decir, si tenemos 97 unidades y quitamos 35, nos quedan 62."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso3resta1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,100" />
+
+
+
+
+                <Label Text="Restar llevando acarreos"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Colocamos los números uno debajo del otro, como antes."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso1resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Empezamos restando las unidades. En este caso, 6 - 0. Preguntamos: ¿Cuánto falta para que 0 llegue a 6? No podemos hacer esto, así que pedimos prestado al siguiente número. El 0 se convierte en 10."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso2resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Recuerda que en el sistema posicional cada dígito de una casilla representa un grupo de diez de la casilla anterior.  Por esta razón el cuatro presta solo una unidad, pero cuando esta pasa a la casilla de la derecha representa diez unidades."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Label Text="Paso 3:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Ahora restamos las unidades nuevamente. En este caso,, 10 - 6. Preguntamos: ¿Cuánto falta para que 6 llegue a 10? "
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Como la respuesta es 4, ponemos ese número en la casilla de las unidades de la respuesta."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso3resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 4:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Podemos ahora seguir con la columna de las decenas. Recordando que el cuatro fue transformado en tres nos preguntamos: ¿cuánto le falta al 9 para llegar a 3?"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso4resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Nuevamente la pregunta carece de sentido ya que tres es menor que nueve, para solucionar este problema el 3 debe pedir prestado a la siguiente cifra de la izquierda, el cinco 5. "
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Al prestar una unidad, el cinco queda convertido en 4; mientras que al recibirla, el 3 queda convertido en 13."
+                   FontSize="Body" 
+                   Margin="0,10,0,30"/>
+
+                <Label Text="Paso 5:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Realizamos la resta de las decenas con los números resultantes: ahora nos preguntamos: ¿cuánto le falta al 9 para llegar a 13?"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Como la respuesta es 4, ese es el número que debe ser puesto en la casilla de las decenas de la respuesta:"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso5resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 6:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Finalmente restamos la columna de las centenas.  Teniendo en cuenta que el 5 fue transformado en 4 hacemos la pregunta: ¿cuánto le falta al 1 para llegar a 4?  Como la respuesta es 3, ponemos ese resultado en la casilla de las unidades de la solución.  Obtenemos: 540 – 196 = 344."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso6resta2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,30" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

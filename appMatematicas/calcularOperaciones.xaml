@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.calcularOperaciones">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="27" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="27" /> 
+            </Style>
+            <Style TargetType="Picker">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <AbsoluteLayout>
+        <!-- Imagen de fondo -->
+        <Image Source="calcularoperaciones.jpg" Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+        <!-- Contenido -->
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+
+            <!-- Título del Picker -->
+            <Label Text="Selecciona una operación:" HorizontalOptions="Center" TextColor="MediumPurple" FontAttributes="Bold"/>
+
+            <!-- Picker -->
+            <StackLayout >
+                <Picker x:Name="operacionPicker" WidthRequest="150" SelectedIndexChanged="operacionPicker_SelectedIndexChanged" BackgroundColor="Gray">
+                    <Picker.Items>
+                        <x:String>Suma</x:String>
+                        <x:String>Resta</x:String>
+                        <x:String>Multiplicación</x:String>
+                        <x:String>División</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Entry x:Name="tbPrimerNumero" WidthRequest="90" HeightRequest="75" Placeholder="Núm 1" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="operationLabel" Text="" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="tbSegundoNumero" WidthRequest="90" HeightRequest="75" Placeholder="Núm 2" TextColor="Black" FontAttributes="Bold" />
+                <Label Text="=" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="lbResultado" Text="" VerticalOptions="Center" TextColor="Red" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <Button Text="Calcular"  WidthRequest="110" HeightRequest="50" FontSize="18" Clicked="btnCalcular_Clicked" HorizontalOptions="Center" BackgroundColor="CornflowerBlue" TextColor="White"/>
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

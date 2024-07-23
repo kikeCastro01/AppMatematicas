@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.ejerciciosOperaciones">
+
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="menuejercicios.jpg"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Contenido principal -->
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                <Label Text="Selecciona el Tipo de Ejercicio"
+                     HorizontalTextAlignment="Center"
+                     FontSize="Large"
+                     Margin="0,0,0,20" 
+                     TextColor="Red"
+                     FontAttributes="Bold"/>
+
+                <!-- ImageButton con Label para abrir la página de ejercicios de suma -->
+                <Frame CornerRadius="20" 
+                  Padding="0"
+                  HasShadow="True"
+                  BackgroundColor="LightSteelBlue"
+                  Margin="0,0,0,10"
+                  WidthRequest="125"
+                  HeightRequest="125">
+                    <StackLayout Orientation="Vertical"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               WidthRequest="125"
+                               HeightRequest="125">
+                        <ImageButton Clicked="btnEjSuma_Clicked"
+                                     HorizontalOptions="CenterAndExpand"
+                                     Source="matematicas.png"
+                                     WidthRequest="100"
+                                     HeightRequest="100"/>
+                        <Label Text="Suma"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- ImageButton con Label para abrir la página de ejercicios de resta -->
+                <Frame CornerRadius="15"
+                  Padding="0"
+                  HasShadow="True"
+                  BackgroundColor="LightSteelBlue"
+                  Margin="0,0,0,10"
+                  WidthRequest="125"
+                  HeightRequest="125">
+                    <StackLayout Orientation="Vertical"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               WidthRequest="125"
+                               HeightRequest="125">
+                        <ImageButton Clicked="btnEjResta_Clicked"
+                                     HorizontalOptions="CenterAndExpand"
+                                     Source="restar.png" WidthRequest="100"
+                                     HeightRequest="100"/>
+                        <Label Text="Resta"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- ImageButton con Label para abrir la página de ejercicios de multiplicación -->
+                <Frame CornerRadius="15"
+                  Padding="0"
+                  HasShadow="True"
+                  BackgroundColor="LightSteelBlue"
+                  Margin="0,0,0,10"
+                  WidthRequest="125"
+                  HeightRequest="125">
+                    <StackLayout Orientation="Vertical"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               WidthRequest="125"
+                               HeightRequest="125">
+                        <ImageButton Clicked="btnEjMultiplicacion_Clicked"
+                                     HorizontalOptions="CenterAndExpand"
+                                     Source="formula.png"
+                                     WidthRequest="100"
+                                     HeightRequest="100"/>
+                        <Label Text="Multiplicación"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- ImageButton con Label para abrir la página de ejercicios de división -->
+                <Frame CornerRadius="20" 
+                  Padding="0"
+                  HasShadow="True"
+                  BackgroundColor="LightSteelBlue"
+                  Margin="0,0,0,10"
+                  WidthRequest="125"
+                  HeightRequest="125">
+                    <StackLayout Orientation="Vertical"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               WidthRequest="125"
+                               HeightRequest="125">
+                        <ImageButton Clicked="btnEjDivision_Clicked"
+                                     HorizontalOptions="CenterAndExpand"
+                                     Source="ejdivision.png"
+                                     WidthRequest="100"
+                                     HeightRequest="100"/>
+                        <Label Text="División" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

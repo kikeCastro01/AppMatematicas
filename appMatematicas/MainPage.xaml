@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.MainPage">
+
+
+    <AbsoluteLayout>
+        <!-- Imagen de fondo -->
+        <Image Source="inicio.jpg" Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+        <!-- Contenido -->
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Agregar la imagen del logo -->
+            <Image Source="logo.png" Aspect="AspectFit" 
+                   WidthRequest="375" HeightRequest="375" />
+
+            <!-- Agregar el botón debajo de la imagen -->
+            <Button Text="Iniciar" Clicked="btnIniciar_Clicked" 
+                    HorizontalOptions="Center" WidthRequest="150"
+                    BackgroundColor="ForestGreen" TextColor="White"/>
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

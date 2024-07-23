@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.guiaSuma"
+             Title="Guia Suma">
+
+    <Grid>
+        <Image Source="fondoguias.jpg"
+               Aspect="AspectFill"/>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="Suma"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Recuerda que los números son como símbolos especiales que usamos para contar cosas. Cuando hablamos de números, estamos hablando de cuántas cosas hay."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Imagina que Juan tiene 4 juguetes y Paola tiene 5. Si juntan sus juguetes, ¿cuántos tienen en total? Aquí es donde usamos algo llamado suma."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="suma1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Al juntar los juguetes de ambos, el resultado es el siguiente:"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="suma2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Primero, colocamos los juguetes de cada uno juntos. Después, los juntamos todos en un solo grupo. El número total de juguetes es lo que buscamos. Lo escribimos así: 4 + 5 = 9, que se lee: cuatro más cinco es igual a nueve."
+                   FontSize="Body" 
+                   Margin="0,10,0,100"/>
+
+
+
+
+                <Label Text="Suma utilizando Valores Posicionales"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Ponemos los números uno debajo del otro, imagina que cada número tiene su lugar especial, como casillas. En la primera casilla, de derecha a izquierda, se colocan las unidades; en la segunda, las decenas; en la tercera, las centenas, y así sucesivamente."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso1suma1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Empezamos sumando los números en la columna de las unidades. En este caso, 4 + 3 = 7. Escribimos el resultado en la casilla de las unidades."
+                   FontSize="Body" 
+                   Margin="0,10,0,30"/>
+
+
+                <Label Text="Paso 3:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Luego sumamos las decenas. En este caso, 1 + 2 = 3. Escribimos esto en la casilla de las decenas."
+                   FontSize="Body" 
+                   Margin="0,10,0,30"/>
+
+                <Label Text="Paso 4:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Finalmente, sumamos las centenas. En este caso, 5 + 1 = 6. Lo escribimos en la casilla de las centenas. Así obtenemos nuestra respuesta. Entonces, si sumamos 514 y 123, obtenemos 637."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso2suma1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Por lo tanto, el resultado de la suma es seiscientos treinta y siete: 514 + 123 = 637."
+                   FontSize="Subtitle"
+                   FontAttributes="Italic"
+                   Margin="0,10,0,100" />
+
+
+
+                <Label Text="Sumar llevando acarreos"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Sumamos los números en la columna de las unidades. En este caso, 8 + 7 = 15. Eso significa que tenemos 1 decena y 5 unidades. Escribimos el 5 y llevamos el 1 a la siguiente columna."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso1suma2"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Sumamos las decenas, agregando la llevada. En este caso, 2 + 3 + 1 = 6. Escribimos esto en la casilla de las decenas."
+                   FontSize="Body"
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso2suma2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 3:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Luego sumamos las centenas. En este caso, 7 + 5 = 12. Escribimos el 2 en la casilla de las centenas y llevamos el 1 a la siguiente columna."
+                   FontSize="Body"
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso3suma2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Paso 4:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Finalmente, sumamos las unidades de mil. En este caso, 8 + 5 + 1 = 14. Escribimos esto en la casilla de las unidades de mil."
+                   FontSize="Body"
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso4suma2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

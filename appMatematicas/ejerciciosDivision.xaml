@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.ejerciciosDivision"
+             Title="Ejercicios Division">
+
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="fondoejercicios.jpg"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Seleccione la dificultad:" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Red"/>
+                <Picker x:Name="pickerDificultad" WidthRequest="75" SelectedIndexChanged="pickerDificultad_SelectedIndexChanged" FontSize="Medium" BackgroundColor="Gray">
+                    <Picker.Items>
+                        <x:String>Baja</x:String>
+                        <x:String>Media</x:String>
+                        <x:String>Alta</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Image Source="p1div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,30,30,0" />
+                <Label x:Name="problemLabel1" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion1" Clicked="ButtonOpcion_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50" />
+                <Button x:Name="buttonOpcion2" Clicked="ButtonOpcion_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50" />
+                <Button x:Name="buttonOpcion3" Clicked="ButtonOpcion_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50" />
+                <Button x:Name="buttonOpcion4" Clicked="ButtonOpcion_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50" />
+
+                <Image Source="p2div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel2" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion5" Clicked="ButtonOpcion2_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50" />
+                <Button x:Name="buttonOpcion6" Clicked="ButtonOpcion2_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion7" Clicked="ButtonOpcion2_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion8" Clicked="ButtonOpcion2_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p3div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel3" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion9" Clicked="ButtonOpcion3_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion10" Clicked="ButtonOpcion3_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion11" Clicked="ButtonOpcion3_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion12" Clicked="ButtonOpcion3_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p4div.png" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel4" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion13" Clicked="ButtonOpcion4_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion14" Clicked="ButtonOpcion4_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion15" Clicked="ButtonOpcion4_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion16" Clicked="ButtonOpcion4_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p5div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel5" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion17" Clicked="ButtonOpcion5_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion18" Clicked="ButtonOpcion5_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion19" Clicked="ButtonOpcion5_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion20" Clicked="ButtonOpcion5_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p6div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel6" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion21" Clicked="ButtonOpcion6_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion22" Clicked="ButtonOpcion6_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion23" Clicked="ButtonOpcion6_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion24" Clicked="ButtonOpcion6_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p7div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel7" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion25" Clicked="ButtonOpcion7_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion26" Clicked="ButtonOpcion7_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion27" Clicked="ButtonOpcion7_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion28" Clicked="ButtonOpcion7_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p8div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel8" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion29" Clicked="ButtonOpcion8_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion30" Clicked="ButtonOpcion8_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion31" Clicked="ButtonOpcion8_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion32" Clicked="ButtonOpcion8_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p9div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel9" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion33" Clicked="ButtonOpcion9_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion34" Clicked="ButtonOpcion9_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion35" Clicked="ButtonOpcion9_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion36" Clicked="ButtonOpcion9_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Image Source="p10div.jpg" Aspect="AspectFit" HeightRequest="150" Margin="30,50,30,0" />
+                <Label x:Name="problemLabel10" FontSize="Small" HorizontalTextAlignment="Center" Margin="30,30,30,30" TextColor="Black"/>
+                <Button x:Name="buttonOpcion37" Clicked="ButtonOpcion10_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion38" Clicked="ButtonOpcion10_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion39" Clicked="ButtonOpcion10_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+                <Button x:Name="buttonOpcion40" Clicked="ButtonOpcion10_Clicked" Margin="0,0,0,10" WidthRequest="75" HeightRequest="50"/>
+
+                <Button Text="Evaluar" Clicked="ButtonEvaluar_Clicked" Margin="0,50,0,50" BackgroundColor="CornflowerBlue" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" WidthRequest="110" HeightRequest="50" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

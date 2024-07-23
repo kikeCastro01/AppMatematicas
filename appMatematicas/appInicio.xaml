@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:appMatematicas"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="BurlyWood"
+            x:Class="appMatematicas.appInicio">
+    
+
+    <local:calcularOperaciones Title="Calcular Operaciones" IconImageSource="calcular.png"></local:calcularOperaciones>
+    <local:ejerciciosOperaciones Title="Ejercicios" IconImageSource="ejercicios.png"></local:ejerciciosOperaciones>
+    <local:guiasOperaciones Title="Guias e Instrucciones" IconImageSource="guia.png"></local:guiasOperaciones>
+    
+</TabbedPage>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.guiaDivision"
+             Title="Guia División">
+    <Grid>
+        <Image Source="fondoguias.jpg"
+               Aspect="AspectFill"/>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="División"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="La división es una operación básica de la matemática que permite distribuir un todo en partes iguales, siendo la operación inversa de la multiplicación."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="La distribución en partes iguales de un todo de manera exacta no siempre ocurre, pueden sobrar algunos elementos que a su vez deben dividirse para poder ser repartidos o simplemente dejarlos sin repartir."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="De este ejemplo sencillo se puede entender las divisiones: se tienen 6 hot dogs para repartir entre dos personas, haciendo la división en partes iguales a cada persona le corresponden 3 hot dogs."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Por ser la división la operación inversa de la multiplicación, al dividir se halla uno de los factores de la multiplicación. Además, por ser inversa mediante la multiplicación se puede comprobar que el resultado de una división sea correcto."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Según el ejemplo, hay dos personas y a cada una le corresponden 6 hot dogs, si se desea saber cuántos hot dogs hay entre las 2 persona se multiplica 2 x 3 = 6, que fue la cantidad que se tenía inicialmente para repartir."
+                   FontSize="Body" 
+                   Margin="0,30,0,100"/>
+
+
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Iniciamos definiendo cuántas veces cabe el divisor en el primer número del dividendo."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso1division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+                <Label Text="Si esta cifra es más pequeña que el divisor, entonces tendremos que tomar otra cifra más del dividendo."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso1dosdivision1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Ahora buscamos un número que indique cuantas veces cabe el 8 en el 32."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso2division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+                <Label Text="Este número al multiplicarlo por el divisor nos debe dar como resultado 32. Si no lo hay, buscamos el resultado menor más próximo."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="El número buscado es el 4, porque el 5 se pasa de 32."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Label Text="Paso 3:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Escribimos el número 4 encima de la cifra del dividendo que se toma, sobre la “casita” llamada galera."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso3division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 4:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="A continuación, se multiplica el 4 del cociente por el divisor 8. El resultado se coloca debajo del 32 y se le resta."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso4division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+                <Label Text="El resultado de restar 32 a 32 es 0."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Si el dividendo no tuviera otro número, se habría terminado la división, pero aún nos queda el 8."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Label Text="Paso 5:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Ahora, bajamos el 8 y lo colocamos a la derecha de los ceros"
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso5division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+                <Label Text="Buscamos cuantas veces cabe el divisor en el 8."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Label Text="Paso 6:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Debido a que 8 x 1 = 8, encontramos que el divisor 8 cabe 1 vez en el 8."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Se coloca el 1 en el cociente a la derecha del 4. Se multiplica el 1 por el divisor 8 y el resultado se resta al 8."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="La resta da como resultado cero."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso6division1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appMatematicas.guiaMultiplicacion"
+             Title="Guia Multiplicación">
+
+    <Grid>
+        <Image Source="fondoguias.jpg"
+               Aspect="AspectFill"/>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="Multiplicación de una cifra"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Al igual que con la suma y la resta, para manejar números grandes, primero debes aprender a trabajar con los dígitos."
+                   FontSize="Body"
+                   Margin="0,10,0,10"/>
+                <Label Text="Cuando multiplicamos, simplemente sumamos el segundo número tantas veces como el primero lo indique."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Por ejemplo, veamos cuánto es 3 x 2. Esto significa “tres veces dos”. Si dibujamos dos objetos tres veces, obtenemos seis en total."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="multiplicacion1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+
+                <Label Text="Para encontrar el resultado, simplemente contamos cuántos objetos hay en total. Así que, 3 x 2 = 6, que significa “tres veces dos es igual a seis”. "
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="Veamos otro ejemplo: ¿cuánto es 5 x 4? Esto significa “cinco veces cuatro”, entonces sumamos cuatro cinco veces: 4 + 4 + 4 + 4 + 4."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="multiplicacion2.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,100" />
+
+
+
+
+                <Label Text="Multiplicar números de varias cifras"
+                   FontSize="Title"
+                   TextColor="Red"
+                   HorizontalOptions="Center" 
+                   Margin="0,30,0,30"/>
+
+                <Label Text="Paso 1:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Multiplicamos las unidades del segundo número por todo el primero."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Label Text="En este caso, 243 x 6. Colocamos el resultado debajo del primero."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso1multiplicacion1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+
+                <Label Text="Paso 2:"
+                   FontSize="Subtitle"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text=": Luego multiplicamos el primer número por las decenas del segundo. En este caso, multiplicamos 243 x 5. "
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+                <Image Source="paso2multiplicacion1.png"
+                  Aspect="AspectFit"
+                  HeightRequest="200"
+                  Margin="0,10,0,10" />
+                <Label Text="Colocamos el resultado 1215 debajo del anterior, pero moviéndolo una posición a la izquierda"
+                  FontSize="Body" 
+                  Margin="0,10,0,30"/>
+
+                <Label Text="Paso 3:"
+                  FontSize="Subtitle"
+                  FontAttributes="Bold"
+                  TextColor="Black"/>
+                <Label Text="Después, multiplicamos el primer número por las centenas del segundo, es decir, 243 x 2; "
+                  FontSize="Body" 
+                  Margin="0,10,0,10"/>
+                <Image Source="paso3multiplicacion1.png"
+                  Aspect="AspectFit"
+                  HeightRequest="200"
+                  Margin="0,30,0,30" />
+                <Label Text="Colocamos el resultado debajo del anterior, también moviéndolo una posición a la izquierda."
+                  FontSize="Body" 
+                  Margin="0,10,0,10"/>
+                <Label Text="Si hay más cifras, continuamos multiplicando y colocando los resultados debajo, moviéndolos una posición a la izquierda cada vez."
+                  FontSize="Body" 
+                  Margin="0,0,0,30"/>
+
+                <Label Text="Paso 4:"
+                  FontSize="Subtitle"
+                  FontAttributes="Bold"
+                  TextColor="Black"/>
+                <Label Text="Sumamos los resultados por columnas. Esto nos dará el resultado final de la multiplicación."
+                  FontSize="Body" 
+                  Margin="0,10,0,10"/>
+                <Label Text="Por lo tanto, podemos decir que 243 x 256 = 62208."
+                   FontSize="Body" 
+                   Margin="0,10,0,10"/>
+
+                <Image Source="paso4multiplicacion1.png"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   Margin="0,30,0,30" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
